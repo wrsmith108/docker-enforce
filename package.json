@@ -30,11 +30,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/claude-code-skills/docker-enforce.git"
+    "url": "git+https://github.com/wrsmith108/docker-enforce.git"
   },
-  "homepage": "https://github.com/claude-code-skills/docker-enforce#readme",
+  "homepage": "https://github.com/wrsmith108/docker-enforce#readme",
   "bugs": {
-    "url": "https://github.com/claude-code-skills/docker-enforce/issues"
+    "url": "https://github.com/wrsmith108/docker-enforce/issues"
   },
   "engines": {
     "node": ">=18.0.0"
