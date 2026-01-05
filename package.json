@@ -1,0 +1,53 @@
+{
+  "name": "docker-enforce",
+  "version": "1.0.0",
+  "description": "Enforces Docker-first development policy by intercepting host commands",
+  "type": "module",
+  "main": "./scripts/enforce.ts",
+  "bin": {
+    "docker-enforce": "./hooks/pre-command.sh"
+  },
+  "scripts": {
+    "check": "tsx scripts/enforce.ts check",
+    "validate": "tsx scripts/enforce.ts validate",
+    "transform": "tsx scripts/enforce.ts transform",
+    "enforce": "tsx scripts/enforce.ts enforce",
+    "test": "bash hooks/pre-command.sh --help"
+  },
+  "keywords": [
+    "docker",
+    "enforce",
+    "claude-code",
+    "skill",
+    "development",
+    "policy",
+    "container",
+    "npm",
+    "yarn",
+    "pnpm"
+  ],
+  "author": "Community",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claude-code-skills/docker-enforce.git"
+  },
+  "homepage": "https://github.com/claude-code-skills/docker-enforce#readme",
+  "bugs": {
+    "url": "https://github.com/claude-code-skills/docker-enforce/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "hooks/",
+    "scripts/",
+    "SKILL.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "tsx": "^4.7.0",
+    "typescript": "^5.7.0"
+  }
+}
